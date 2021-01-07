@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GenerateInvoiceController">
+   <children>
+      <Button fx:id="genInv" layoutX="182.0" layoutY="271.0" mnemonicParsing="false" onAction="#genInv" prefHeight="36.0" prefWidth="237.0" style="-fx-background-color: #0598ff;" text="Confirm order to Generate Invoice" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="LIST_ALT" size="18" />
+         </graphic>
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="-1.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" size="19" />
+         </graphic></Button>
+      <TextField fx:id="invoiceField" layoutX="272.0" layoutY="207.0" promptText="order id" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="173.0" layoutY="212.0" text="Enter Order ID :">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="132.0" fitWidth="122.0" layoutX="243.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bill.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

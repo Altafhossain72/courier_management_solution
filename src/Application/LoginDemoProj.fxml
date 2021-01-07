@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="20.0" prefHeight="604.0" prefWidth="448.0" vgap="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegistrationFormController">
+    <padding><Insets bottom="40.0" left="40.0" right="40.0" top="40.0" /></padding>
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" maxWidth="Infinity" minWidth="100.0" prefWidth="100.0">
+        </ColumnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="200.0" prefWidth="200.0">
+        </ColumnConstraints>
+    </columnConstraints>
+   <children>
+   
+   
+   	<!-- Add User ID Label -->
+       <Label text="UserID: " GridPane.rowIndex="2">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+       <!-- Add UserID Text Field -->
+       <TextField fx:id="userIdField" prefHeight="40" promptText="user id" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   	
+   
+       <!-- Add Name Label -->
+       <Label text="Name: " GridPane.rowIndex="3">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+       <!-- Add UserID Text Field -->
+       <TextField fx:id="fNameField" prefHeight="40" promptText="user name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   
+   	<!-- Add LName Label -->
+       <Label text="Last Name: " GridPane.rowIndex="4">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+       <!-- Add LName Text Field -->
+       <TextField fx:id="lNameField" prefHeight="40" promptText="user last name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+   	
+   	<!-- Add Address Label -->
+       <Label text="Address: " GridPane.rowIndex="5">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+       <!-- Add Address Text Field -->
+       <TextField fx:id="addressField" prefHeight="40" promptText="user address" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   	
+   
+       <!-- Add Email Label -->
+       <Label text="Email ID : " GridPane.rowIndex="6">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+       <!-- Add Email Text Field -->
+       <TextField fx:id="emailField" prefHeight="40" promptText="user email" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+   
+   
+   
+       <!-- Add Password Label -->
+       <Label text="Password : " GridPane.rowIndex="7">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+       <!-- Add Password Field -->
+       <PasswordField fx:id="passwordField" prefHeight="40" promptText="user password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+   
+   <!-- Add ContactNo Label -->
+       <Label text="Contact Number: " GridPane.rowIndex="8">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+       <!-- Add UserID Text Field -->
+       <TextField fx:id="contactNoField" prefHeight="40" promptText="user contact number" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #0598ff;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+   
+   
+       <!-- Add Submit Button -->
+       <Button fx:id="submitButton" defaultButton="true" onAction="#handleSubmitButtonAction" prefHeight="36.0" prefWidth="145.0" style="-fx-background-color: #0598ff;" text="Register" textFill="#fffdfd" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.rowSpan="1">
+           <GridPane.margin>
+               <Insets bottom="20" left="0" right="0" top="20" />
+           </GridPane.margin>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@customer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+       </Button>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="33.0" prefWidth="91.0" style="-fx-background-color: #0598ff;" text="Back" textFill="#fcfcfc" GridPane.rowIndex="9">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="99.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.valignment="BASELINE">
+         <image>
+            <Image url="@kindpng_5505432.png" />
+         </image>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </ImageView>
+   </children>
+   <rowConstraints>
+      <RowConstraints valignment="TOP" />
+      <RowConstraints />
+      <RowConstraints maxHeight="33.0" minHeight="27.0" prefHeight="29.0" />
+      <RowConstraints maxHeight="49.0" minHeight="24.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="61.0" minHeight="21.0" prefHeight="27.0" />
+      <RowConstraints maxHeight="72.0" minHeight="19.0" prefHeight="28.0" />
+      <RowConstraints maxHeight="71.0" minHeight="18.0" prefHeight="27.0" />
+      <RowConstraints maxHeight="80.0" minHeight="12.0" prefHeight="28.0" />
+      <RowConstraints maxHeight="92.0" minHeight="13.0" prefHeight="31.0" />
+      <RowConstraints maxHeight="143.0" minHeight="34.0" prefHeight="34.0" />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegistrationFormController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <Text fill="#2f5597" layoutX="14.0" layoutY="41.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Courier Management System! " wrappingWidth="559.13671875">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="27.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="234.0" fitWidth="318.0" layoutX="67.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fast-delivery-final01.gif" />
+               </image>
+            </ImageView>
+            <Text fill="#e02867" layoutX="14.0" layoutY="76.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Yes! It is faster than you imagine." wrappingWidth="265.13671875">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="426.0" layoutY="152.0" onAction="#onAboutUs" text="About Us">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Hyperlink>
+            <Hyperlink layoutX="426.0" layoutY="200.0" onAction="#onContactUs" text="Contact Us">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Hyperlink>
+            <Hyperlink layoutX="426.0" layoutY="242.0" onAction="#onAdminLogin" text="Login as Admin">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Hyperlink>
+            <Hyperlink id="signUp" layoutX="426.0" layoutY="112.0" onAction="#onsignUp" text="Join Us! Sign Up">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Hyperlink>
+            <Hyperlink id="signIn" layoutX="426.0" layoutY="65.0" onAction="#onsignIn" text="Already an User? Sign In">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Hyperlink>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
